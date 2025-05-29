@@ -1,0 +1,122 @@
+# Node modules
+/node_modules/
+
+# Compiled output
+/dist/
+/out-tsc/
+/build/
+/tmp/
+
+# Angular build files
+/.angular/cache/
+/.angular/
+
+# Environment files (se você quiser evitar versionar variáveis sensíveis)
+# Comente se você quiser versionar seus environments.
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Sistemas operacionais
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage reports
+/coverage/
+
+# Compilação TypeScript
+*.tsbuildinfo
+
+# Arquivos gerados pelo npm/yarn/pnpm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Arquivos temporários diversos
+*.tmp
+*.swp
+*.bak
+*.orig
+
+# Teste e relatórios
+/test-output
+/test-results
+/karma-coverage/
+
+# Arquivos de cache
+.npm/
+.cache/
+
+## Build results
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+## Rider / JetBrains
+.idea/
+
+## VS Code
+.vscode/
+.history/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## .NET CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+.nuget/
+packages/
+*.dgspec.json
+PackageArtifacts/
+project.assets.json
+
+## Logs
+*.log
+
+## OS Files
+.DS_Store
+Thumbs.db
+
+## Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.cov
+*.code-coverage
+
+## Configuration
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+## EF Core
+Migrations/*Snapshot.cs
+
+## Temporary files
+*.tmp
+*.bak
+*.swp
+*.orig
+
+## Publish output
+publish/

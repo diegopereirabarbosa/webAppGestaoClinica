@@ -1,0 +1,254 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\controllers\\atendimentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:controllers\\atendimentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\controllers\\pacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:controllers\\pacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\models\\atendimentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:models\\atendimentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\models\\gestaoclinicacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:models\\gestaoclinicacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\models\\triagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:models\\triagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\dtos\\atendimentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:dtos\\atendimentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\models\\triagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:models\\triagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\controllers\\triagemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:controllers\\triagemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\models\\pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:models\\pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|c:\\develop\\webappgestaoclinica\\apigestaoclinica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DE0DE2D0-BCDE-4A0B-BB75-C45D95E9D952}|ApiGestaoClinica.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 946,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Triagens.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\Triagens.cs",
+              "RelativeDocumentMoniker": "Models\\Triagens.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\Triagens.cs",
+              "RelativeToolTip": "Models\\Triagens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T23:47:12.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Triagem.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\Triagem.cs",
+              "RelativeDocumentMoniker": "Models\\Triagem.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\Triagem.cs",
+              "RelativeToolTip": "Models\\Triagem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T23:46:57.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GestaoClinicaContext.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\GestaoClinicaContext.cs",
+              "RelativeDocumentMoniker": "Models\\GestaoClinicaContext.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\GestaoClinicaContext.cs",
+              "RelativeToolTip": "Models\\GestaoClinicaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T20:58:28.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TriagemController.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Controllers\\TriagemController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TriagemController.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Controllers\\TriagemController.cs",
+              "RelativeToolTip": "Controllers\\TriagemController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T19:26:45.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AtendimentosController.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Controllers\\AtendimentosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AtendimentosController.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Controllers\\AtendimentosController.cs*",
+              "RelativeToolTip": "Controllers\\AtendimentosController.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswDAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T19:11:20.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PacientesController.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Controllers\\PacientesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PacientesController.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Controllers\\PacientesController.cs",
+              "RelativeToolTip": "Controllers\\PacientesController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswCAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T19:02:29.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Pacientes.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\Pacientes.cs",
+              "RelativeDocumentMoniker": "Models\\Pacientes.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\Pacientes.cs",
+              "RelativeToolTip": "Models\\Pacientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T18:59:05.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Atendimentos.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\Atendimentos.cs",
+              "RelativeDocumentMoniker": "Models\\Atendimentos.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Models\\Atendimentos.cs",
+              "RelativeToolTip": "Models\\Atendimentos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T18:57:18.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-24T14:51:41.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T14:50:27.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AtendimentoDto.cs",
+              "DocumentMoniker": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Dtos\\AtendimentoDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\AtendimentoDto.cs",
+              "ToolTip": "C:\\Develop\\webAppGestaoClinica\\ApiGestaoClinica\\Dtos\\AtendimentoDto.cs",
+              "RelativeToolTip": "Dtos\\AtendimentoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T00:02:39.461Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1137,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{605322a2-17ae-43f4-b60f-766556e46c87}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

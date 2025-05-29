@@ -1,0 +1,78 @@
+<mat-sidenav-container style="height: 100vh;">
+  <mat-sidenav mode="side" opened>
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+
+    <button mat-button>
+      <mat-icon>dashboard</mat-icon>
+      <span>Dashboard</span>
+    </button>
+
+    <button mat-button [matMenuTriggerFor]="menuPacientes">
+      <mat-icon>group</mat-icon>
+      <span>Pacientes</span>
+      <mat-icon>arrow_right</mat-icon>
+    </button>
+    <mat-menu #menuPacientes="matMenu">
+      <button mat-menu-item routerLink="/pacientes/listar">
+        <mat-icon>list</mat-icon>
+        <span>Listar</span>
+      </button>
+      <button mat-menu-item routerLink="/pacientes/cadastrar">
+        <mat-icon>person_add</mat-icon>
+        <span>Cadastrar</span>
+      </button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menuAtendimentos">
+      <mat-icon>local_hospital</mat-icon>
+      <span>Atendimentos</span>
+      <mat-icon>arrow_right</mat-icon>
+    </button>
+    <mat-menu #menuAtendimentos="matMenu">
+      <button mat-menu-item routerLink="/atendimentos/listar">
+        <mat-icon>list</mat-icon>
+        <span>Listar</span>
+      </button>
+      <button mat-menu-item routerLink="/atendimentos/cadastrar">
+        <mat-icon>local_hospital</mat-icon>
+        <span>Cadastrar</span>
+      </button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="menuTriagem">
+      <mat-icon>add_task</mat-icon>
+      <span>Triagem</span>
+      <mat-icon>arrow_right</mat-icon>
+    </button>
+    <mat-menu #menuTriagem="matMenu">
+      <button mat-menu-item routerLink="/triagens/listar">
+        <mat-icon>list</mat-icon>
+        <span>Listar</span>
+      </button>
+      <button mat-menu-item routerLink="/triagens/cadastrar">
+        <mat-icon>medication</mat-icon>
+        <span>Cadastrar</span>
+      </button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="menuConfig">
+      <mat-icon>settings</mat-icon>
+      <span>Configurações</span>
+      <mat-icon>arrow_right</mat-icon>
+    </button>
+    <mat-menu #menuConfig="matMenu">
+      <button mat-menu-item>
+        <mat-icon>build</mat-icon>
+        <span>Geral</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>security</mat-icon>
+        <span>Segurança</span>
+      </button>
+    </mat-menu>
+
+    <button mat-button>
+      <mat-icon>logout</mat-icon>
+      <span>Sair</span>
+    </button>
+  </mat-sidenav>
+</mat-sidenav-container>

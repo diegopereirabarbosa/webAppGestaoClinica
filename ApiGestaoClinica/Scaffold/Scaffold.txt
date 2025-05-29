@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext -Connection 'Server=localhost\SQLEXPRESS;Database=GestaoClinica;Trusted_Connection=True;TrustServerCertificate=True;' -NoPluralize Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Tables Pacientes, Atendimentos, Especialidade, Triagem  –force

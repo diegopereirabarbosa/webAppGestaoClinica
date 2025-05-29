@@ -1,0 +1,22 @@
+    .container {
+      height: 100%;
+    }
+
+    .content {
+      padding: 1rem;
+    }
+
+    mat-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .mat-toolbar{
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .mat-toolbar span{
+      font-size: 1.5em;
+      color: #1e3a8a;
+      font-weight: 500;
+    }
+    

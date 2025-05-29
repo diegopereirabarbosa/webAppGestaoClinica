@@ -1,0 +1,36 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-100 login-container">
+    <div class="w-full max-w-sm p-6 bg-white rounded-xl shadow-md">
+        <div class="login-header">
+            <h2>Gestão de Clínicas</h2>
+        </div>
+        <h3 class=" font-semibold mb-2 text-left">Login</h3>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1" for="email">Email</label>
+                <input id="email" type="email" formControlName="email"
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                    placeholder="seu@email.com" />
+                <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched"
+                    class="text-red-500 text-sm mt-1">
+                    Email inválido.
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1" for="password">Senha</label>
+                <input id="password" type="password" formControlName="password"
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                    placeholder="••••••••" />
+                <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+                    class="text-red-500 text-sm mt-1">
+                    Senha é obrigatória.
+                </div>
+            </div>
+
+            <button mat-flat-button color="primary" type="submit" [disabled]="loginForm.invalid"
+                class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                Entrar
+            </button>
+        </form>
+    </div>
+</div>

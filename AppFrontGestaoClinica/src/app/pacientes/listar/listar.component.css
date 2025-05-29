@@ -1,0 +1,16 @@
+.custom-card {
+  margin: 1rem auto;
+  border: 1px solid #e0e0e0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.custom-card-header {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 12px 12px 0px 0px;
+  mat-card-title {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,29 @@
+<mat-sidenav-container class="container">
+      <mat-sidenav
+        #sidenav
+        [mode]="isMobile ? 'over' : 'side'"
+        [opened]="!isMobile"
+        (closedStart)="close()"
+      >
+        <app-sidebar></app-sidebar>
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+        <mat-toolbar color="primary" class="mat-toolbar">
+          <button
+            *ngIf="isMobile"
+            mat-icon-button
+            (click)="sidenav.toggle()"
+            aria-label="Abrir menu"
+          >
+            <mat-icon>menu</mat-icon>
+          </button>
+          <span>Gestão de Clínicas</span>
+        </mat-toolbar>
+
+        <main class="content">
+          <router-outlet></router-outlet>
+        </main>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+    
