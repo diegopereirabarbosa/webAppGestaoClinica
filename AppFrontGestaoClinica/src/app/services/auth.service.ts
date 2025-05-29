@@ -4,79 +4,49 @@ import { catchError, Observable, tap, throwError } from 'rxjs';
 import { environment } from '../../environments/environments';
 import { Router } from '@angular/router';
 
-
-// Interfaces no escopo do arquivo (fora da classe)
-export interface LoginCredentials {
-  Login: string;
-  Senha: string;
-}
-
-export interface LoginResponse {
-  success: boolean;
-  message: string;
-  userId?: number;
-  login?: string;
-  token?: string;
-  tokenExpires?: string;
-}
-
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private isAuthenticated = false;
-  private readonly AUTH_KEY = 'isAuthenticated';
+  
+  private readonly TOKEN_KEY = 'accessToken';
+  private readonly REFRESH_KEY = 'refreshToken';
+  private readonly USER_KEY = 'userData';
 
-  private apiUrl = environment.apiUrl; // Usando a URL do environment
+  constructor() {}
 
-  constructor(private http: HttpClient, private router: Router) { }
-
-  login(credentials: LoginCredentials): Observable<any> {
-    return this.http.post(`${this.apiUrl}/TbLogins/Login`, credentials).pipe(
-      tap(() => {
-        this.isAuthenticated = true;
-        localStorage.setItem(this.AUTH_KEY, 'true');
-      }),
-      catchError((error: HttpErrorResponse) => {
-        this.clearAuthData();
-        let errorMessage = 'Erro durante o login';
-        
-        if (error.error instanceof ErrorEvent) {
-          errorMessage = `Erro: ${error.error.message}`;
-        } else {
-          if (error.status === 0) {
-            errorMessage = 'Sem conexão com o servidor';
-          } else if (error.status === 401) {
-            errorMessage = error.error?.message || 'Credenciais inválidas';
-          } else if (error.status >= 500) {
-            errorMessage = 'Erro no servidor. Tente novamente mais tarde.';
-          } else if (error.error?.message) {
-            errorMessage = error.error.message;
-          }
-        }
-        
-        return throwError(() => new Error(errorMessage));
-      })
-    );
+  // Salvar dados no localStorage
+  saveAuthData(token: string, refreshToken: string, userData: any): void {
+    localStorage.setItem(this.TOKEN_KEY, token);
+    localStorage.setItem(this.REFRESH_KEY, refreshToken);
+    localStorage.setItem(this.USER_KEY, JSON.stringify(userData));
   }
 
-  logout(): void {
-    this.isAuthenticated = false;
-    this.clearAuthData();
-    this.router.navigate(['/login']);
+  // Recuperar token
+  getToken(): string | null {
+    return localStorage.getItem(this.TOKEN_KEY);
   }
 
+  // Recuperar refreshToken
+  getRefreshToken(): string | null {
+    return localStorage.getItem(this.REFRESH_KEY);
+  }
+
+  // Recuperar dados do usuário
+  getUserData(): any | null {
+    const data = localStorage.getItem(this.USER_KEY);
+    return data ? JSON.parse(data) : null;
+  }
+
+  // Limpar dados ao fazer logout
+  clearAuthData(): void {
+    localStorage.removeItem(this.TOKEN_KEY);
+    localStorage.removeItem(this.REFRESH_KEY);
+    localStorage.removeItem(this.USER_KEY);
+  }
+
+  // Verifica se o usuário está autenticado
   isLoggedIn(): boolean {
-    // Verifica tanto o estado local quanto o armazenamento persistente
-    return this.isAuthenticated || localStorage.getItem(this.AUTH_KEY) === 'true';
-  }
-
-  private clearAuthData(): void {
-    localStorage.removeItem(this.AUTH_KEY);
-  }
-
-  // Verifica o estado de autenticação ao iniciar o aplicativo
-  checkAuthState(): void {
-    this.isAuthenticated = localStorage.getItem(this.AUTH_KEY) === 'true';
+    return !!this.getToken();
   }
 }
