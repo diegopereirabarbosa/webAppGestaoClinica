@@ -31,7 +31,43 @@ Esta é uma API RESTful desenvolvida com **.NET 8** e **ASP.NET Core**, com foco
 - Banco de dados SQL Server (ou altere a string de conexão)
 
 ### ⚙️ Configuração e Execução
+```bash
+git clone https://github.com/seu-usuario/MyApi.git
+cd webAppGestaoClinica/ApiGestaoClinica
+````
+### Execute a aplicação
+````bash
+dotnet run
+````
+A API estará disponível em https://localhost:44394 ou http://localhost:5024
 
+### 📖 Documentação Swagger
+Após iniciar o projeto, acesse:
+
+````bash
+https://localhost:5001/swagger
+````
+
+### 🔐 Autenticação
+A API usa JWT Bearer. Após realizar o login, envie o token no header:
+````bash
+Authorization: Bearer {seu_token}
+````
+### 📌 Principais Endpoints
+| Método | Rota                   | Descrição                 |
+| ------ | -----------------------| ------------------------- |
+| GET    | /api/pacientes         | Lista todos os pacientes  |
+| GET    | /api/pacientes/{id}    | Retorna um paciente       |
+| POST   | /api/pacientes         | Cria um novo paciente     |
+| GET    | /api/atendimentos      | Lista todos atendimentos  |
+| GET    | /api/atendimentos/{id} | Lista um atendiemento     |
+| POST   | /api/atendimentos      | Cria um novo atendimento  |
+| PUT    | /api/atendimentos/{id} | Atualiza um atendimento   |
+| GET    | /api/triagem           | Lista todas as triagens   |
+| GET    | /api/triagem/{id}      | Retorna uma triagem       |
+| POST    | /api/triagem          | Cria uma nova triagem     |
+| PUT    | /api/triagem/{id}      | Atualiza uma triagem      |
+| POST   | /api/auth/login        | Autentica e gera um token |
 
 
 ## 🚀 Aplicação Angular
