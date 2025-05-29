@@ -20,40 +20,41 @@ export class LoginComponent {
   private authService = inject(AuthService);
   private router = inject(Router);
 
-  constructor() {
-    this.loginForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required],
-    });
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+  ) {
   }
 
-  async onSubmit() {
+  ngOnInit() {
+  this.loginForm = this.fb.group({
+    email: ["", Validators.required],
+    senha: ["", Validators.required],
+  });
+
+  this.verificaLogin();
+  }
+
+  verificaLogin() {
+    const token = localStorage.getItem('token' });
+    if (token.value != null) {
+      this.router.navigate(['/dashboard']);
+    }
+  }
+
+  async login() {
     if (this.loginForm.valid) {
-      const { email, password } = this.loginForm.value;
-      console.log('Login:', email, password);
-      const credentials = {
-        Login: this.loginForm.value.email, // Ou 'email' se for o campo correto
-        Senha: this.loginForm.value.password
-      };
-      try {
-        const response = await lastValueFrom(this.authService.login(credentials));
-
-        // Armazenar token (se usar JWT)
-        if (response.token) {
-          localStorage.setItem('authToken', response.token);
-          localStorage.setItem('userData', JSON.stringify({
-            id: response.userId,
-            login: response.login
-          }));
-        }
-
-        // Redirecionar ou atualizar estado da aplicação
-        this.router.navigate(['/']); // Exemplo
-
-      } catch (error: any) {
-
-      }
-
+          const email = this.formLogin.get('email')?.value;
+          const senha = this.formLogin.get('senha')?.value;
+          this.authService.login(email, senha).subscribe({
+          next: async (res) => {
+            this.authService.saveAuthData(res.token, res.refreshToken, res.user);
+            this.router.navigate(['/dashboard']);
+          },
+          error: async (erro) => {
+           // this.falhaLogin(erro);
+          }
+        });
     }
   }
 }
